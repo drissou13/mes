@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>mes</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Enseigne Signalétique - Verre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Maître de l’Enseigne en Verre</h1>
+    <p>Crée la meilleure enseigne en verre pour satisfaire ton client !</p>
+
+    <div id="game">
+        <div id="order">
+            <h2>Commande du client :</h2>
+            <p id="clientRequest"></p>
+        </div>
+
+        <div id="choices">
+            <label for="glassType">Choisir le type de verre :</label>
+            <select id="glassType">
+                <option value="trempé">Verre Trempé</option>
+                <option value="feuilleté">Verre Feuilleté</option>
+                <option value="acrylique">Verre Acrylique</option>
+            </select>
+
+            <label for="printing">Choisir la méthode d'impression :</label>
+            <select id="printing">
+                <option value="sablage">Sablage</option>
+                <option value="sérigraphie">Sérigraphie</option>
+                <option value="vinyle">Vinyle adhésif</option>
+            </select>
+
+            <label for="cutting">Choisir la découpe :</label>
+            <select id="cutting">
+                <option value="droite">Droite</option>
+                <option value="arrondie">Arrondie</option>
+                <option value="personnalisée">Personnalisée</option>
+            </select>
+
+            <button onclick="validateChoice()">Valider l'enseigne</button>
+        </div>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
